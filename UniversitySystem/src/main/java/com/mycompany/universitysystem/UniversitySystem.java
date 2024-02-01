@@ -62,10 +62,10 @@ public class UniversitySystem {
                     sc.nextLine();
                     String num = sc.nextLine();
                     boolean flag = false;
-                    for (Student s : list) {
-                        if (s.getNumber().compareTo(num)==0) {
+                    for (int i=0;i<list.size();i++) {
+                        if (list.get(i).getNumber().equals(num)) {
                             flag = true;
-                            list.remove(s);
+                            list.remove(list.get(i));
                         }
                     }
                     if (!flag) {
