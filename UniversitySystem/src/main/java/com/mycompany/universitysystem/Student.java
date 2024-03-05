@@ -4,13 +4,14 @@
  */
 package com.mycompany.universitysystem;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author LAPTOPVTC.VN
  */
-public abstract class Student {
+public abstract class Student implements Serializable{
 
     private String number;
     private String fullName;
